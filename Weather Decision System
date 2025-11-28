@@ -1,0 +1,10 @@
+temperature = float(input("Enter temperature in °C: "))
+
+if temperature > 35:
+    print("It's too hot. Stay hydrated!")
+elif 25 <= temperature <= 35:
+    print("Nice warm weather.")
+elif 15 <= temperature < 25:
+    print("Cool and pleasant.")
+else:
+    print("Cold weather. Wear a jacket!")
