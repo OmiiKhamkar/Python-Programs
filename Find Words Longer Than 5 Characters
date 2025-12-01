@@ -1,0 +1,8 @@
+sentence = input("Enter a sentence: ").split()
+long_words = []
+
+for word in sentence:
+    if len(word) > 5:
+        long_words.append(word)
+
+print("Words > 5 letters:", long_words)
