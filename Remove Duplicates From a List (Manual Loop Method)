@@ -1,0 +1,8 @@
+nums = [4, 2, 4, 8, 2, 9, 1, 9]
+unique = []
+
+for n in nums:
+    if n not in unique:
+        unique.append(n)
+
+print("List without duplicates:", unique)
