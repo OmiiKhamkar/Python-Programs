@@ -1,0 +1,13 @@
+import re
+
+def validate_url(url):
+    pattern = r'^https?://\S+$'   # Very simple regex
+
+    if re.match(pattern, url):
+        return "Valid URL"
+    else:
+        return "Invalid URL"
+
+
+url = input("Enter URL: ")
+print(validate_url(url))
