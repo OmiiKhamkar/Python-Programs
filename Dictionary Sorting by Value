@@ -1,0 +1,3 @@
+data = {"Omkar": 50, "Bunny": 90, "Ajay": 70}
+sorted_dict = dict(sorted(data.items(), key=lambda x: x[1]))
+print(sorted_dict)
