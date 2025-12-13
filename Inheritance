@@ -1,0 +1,10 @@
+class Shape:
+    def area(self):
+        print("Area not defined")
+
+class Rectangle(Shape):
+    def area(self, l, b):
+        print("Area:", l * b)
+
+r = Rectangle()
+r.area(5, 4)
