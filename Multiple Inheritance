@@ -1,0 +1,19 @@
+class Academic:
+    def __init__(self, marks):
+        self.marks = marks
+
+class Sports:
+    def __init__(self, score):
+        self.score = score
+
+class Student(Academic, Sports):
+    def __init__(self, name, marks, score):
+        self.name = name
+        Academic.__init__(self, marks)
+        Sports.__init__(self, score)
+
+    def display(self):
+        print(self.name, self.marks, self.score)
+
+s = Student("Bunny", 85, 90)
+s.display()
