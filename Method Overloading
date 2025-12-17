@@ -1,0 +1,8 @@
+class MathOp:
+    def add(self, a, b=0, c=0):
+        print("Sum:", a + b + c)
+
+m = MathOp()
+m.add(5)
+m.add(5, 10)
+m.add(5, 10, 15)
