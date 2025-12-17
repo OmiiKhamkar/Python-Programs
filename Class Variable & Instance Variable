@@ -1,0 +1,14 @@
+class Employee:
+    company = "TCS"   # class variable
+
+    def __init__(self, name):
+        self.name = name   # instance variable
+
+    def display(self):
+        print(self.name, Employee.company)
+
+e1 = Employee("Bunny")
+e2 = Employee("Omkar")
+
+e1.display()
+e2.display()
