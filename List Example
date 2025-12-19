@@ -1,0 +1,13 @@
+def unique_list(lst):
+    unique = []
+    for item in lst:
+        if item not in unique:
+            unique.append(item)
+    return unique
+
+# Sample List
+sample_list = [1, 2, 3, 3, 3, 3, 4, 5]
+
+# Function call
+result = unique_list(sample_list)
+print("Unique List:", result)
