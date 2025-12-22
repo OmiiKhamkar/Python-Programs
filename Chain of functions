@@ -1,0 +1,27 @@
+# Decorator for bold
+def bold(func):
+    def wrapper():
+        return "bold " + func()
+    return wrapper
+
+# Decorator for italic
+def italic(func):
+    def wrapper():
+        return "italic " + func()
+    return wrapper
+
+# Decorator for underline
+def underline(func):
+    def wrapper():
+        return "underline " + func()
+    return wrapper
+
+# Applying decorators in chain
+@bold
+@italic
+@underline
+def display():
+    return "text"
+
+# Function call
+print(display())
