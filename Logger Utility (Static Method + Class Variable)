@@ -1,0 +1,11 @@
+class Logger:
+    logs = []
+
+    @staticmethod
+    def log(msg):
+        Logger.logs.append(msg)
+
+Logger.log("Program started")
+Logger.log("Process completed")
+
+print(Logger.logs)
