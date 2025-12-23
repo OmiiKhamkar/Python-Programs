@@ -1,0 +1,11 @@
+class User:
+    def __init__(self, username, password):
+        self.username = username
+        self.__password = password
+
+    def login(self, pwd):
+        return self.__password == pwd
+
+
+u = User("admin", "1234")
+print("Login Success" if u.login("1234") else "Login Failed")
