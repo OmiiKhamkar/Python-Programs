@@ -1,0 +1,18 @@
+class Employee:
+    def __init__(self, name, basic):
+        self.name = name
+        self.basic = basic
+
+    def salary(self):
+        return self.basic
+
+class Manager(Employee):
+    def salary(self):
+        return self.basic + 5000
+
+
+e = Employee("Bunny", 20000)
+m = Manager("Omkar", 20000)
+
+print(e.name, e.salary())
+print(m.name, m.salary())
