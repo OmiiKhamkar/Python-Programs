@@ -1,0 +1,11 @@
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def apply_discount(self, percent):
+        return self.price - (self.price * percent / 100)
+
+
+p = Product("Laptop", 50000)
+print("Final Price:", p.apply_discount(10))
