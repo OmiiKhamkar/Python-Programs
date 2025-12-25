@@ -1,0 +1,16 @@
+class Vehicle:
+    def rent(self, days):
+        pass
+
+class Bike(Vehicle):
+    def rent(self, days):
+        return days * 300
+
+class Car(Vehicle):
+    def rent(self, days):
+        return days * 1000
+
+
+vehicles = [Bike(), Car()]
+for v in vehicles:
+    print(v.rent(2))
