@@ -1,0 +1,8 @@
+class Counter:
+    count = 0
+
+    def __init__(self):
+        Counter.count += 1
+
+Counter(); Counter(); Counter()
+print("Objects created:", Counter.count)
