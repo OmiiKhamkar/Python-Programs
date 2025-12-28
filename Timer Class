@@ -1,0 +1,12 @@
+import time
+
+class Timer:
+    def start(self):
+        self.t = time.time()
+
+    def stop(self):
+        print("Time:", time.time() - self.t)
+
+t = Timer()
+t.start()
+t.stop()
