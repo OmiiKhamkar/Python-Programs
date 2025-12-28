@@ -1,0 +1,13 @@
+class Session:
+    active_users = 0
+
+    def __init__(self):
+        Session.active_users += 1
+
+    def logout(self):
+        Session.active_users -= 1
+
+s1 = Session()
+s2 = Session()
+s1.logout()
+print(Session.active_users)
