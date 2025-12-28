@@ -1,0 +1,8 @@
+class URL:
+    def __init__(self, url):
+        self.url = url
+
+    def is_valid(self):
+        return self.url.startswith(("http://", "https://"))
+
+print(URL("https://google.com").is_valid())
