@@ -1,0 +1,8 @@
+class FileSize:
+    def __init__(self, bytes):
+        self.bytes = bytes
+
+    def kb(self):
+        return self.bytes / 1024
+
+print(FileSize(2048).kb(), "KB")
