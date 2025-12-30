@@ -1,0 +1,10 @@
+class Retry:
+    attempts = 0
+
+    @classmethod
+    def try_again(cls):
+        cls.attempts += 1
+
+Retry.try_again()
+Retry.try_again()
+print(Retry.attempts)
