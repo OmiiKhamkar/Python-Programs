@@ -1,0 +1,8 @@
+class Temp:
+    def __init__(self, value):
+        self.value = value
+
+    def is_high(self):
+        return self.value > 40
+
+print(Temp(45).is_high())
