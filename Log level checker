@@ -1,0 +1,8 @@
+class Log:
+    def __init__(self, level):
+        self.level = level
+
+    def is_error(self):
+        return self.level == "ERROR"
+
+print(Log("ERROR").is_error())
