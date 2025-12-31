@@ -1,0 +1,8 @@
+class File:
+    def __init__(self, name):
+        self.name = name
+
+    def type(self):
+        return self.name.split(".")[-1]
+
+print(File("image.png").type())
