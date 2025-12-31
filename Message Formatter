@@ -1,0 +1,8 @@
+class Message:
+    def __init__(self, text):
+        self.text = text
+
+    def upper(self):
+        return self.text.upper()
+
+print(Message("hello").upper())
