@@ -1,0 +1,10 @@
+class Currency:
+    rate = 83  # USD to INR
+
+    def __init__(self, usd):
+        self.usd = usd
+
+    def to_inr(self):
+        return self.usd * Currency.rate
+
+print(Currency(10).to_inr())
