@@ -1,0 +1,10 @@
+class Login:
+    attempts = 0
+
+    def try_login(self):
+        Login.attempts += 1
+
+l = Login()
+l.try_login()
+l.try_login()
+print(Login.attempts)
